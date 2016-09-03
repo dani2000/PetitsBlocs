@@ -5,11 +5,8 @@ import lejos.hardware.sensor.SensorMode;
 public class Valeurs {
 
 
-	public int[] valeurs(EV3LargeRegulatedMotor moteurDroit, EV3LargeRegulatedMotor moteurGauche,
-			SensorMode capteurCouleur, int[] valeurCouleur) {
-		int valeurCouleurTest = 0;
-		
-		
+	public float[] valeurs(EV3LargeRegulatedMotor moteurDroit, EV3LargeRegulatedMotor moteurGauche,
+			SensorMode capteurCouleur, float[] valeurCouleur) {
 		
 		// règle le capteur couleur
 
@@ -39,7 +36,7 @@ public class Valeurs {
 		
 
 		if (valeurCouleur[0] == 0) {
-			
+			valeurCouleur[0] = sample[0];
 		}
 
 		return valeurCouleur;

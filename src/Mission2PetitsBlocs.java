@@ -18,7 +18,7 @@ public class Mission2PetitsBlocs {
 		
 		int nbreBlocs = 0;
 		
-		int[] valeurCouleur = new int[2];
+		float[] valeurCouleur = new float[2];
 		
 		SuiviDeLigne SuiviDeLigne = new SuiviDeLigne();
 		Valeurs Valeurs = new Valeurs();
