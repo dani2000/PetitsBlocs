@@ -34,11 +34,14 @@ public class Valeurs {
 		float[] sample = new float[capteurCouleur.sampleSize()];
 		capteurCouleur.fetchSample(sample, 0);
 		
-
+		// si c'est le premier tour, on ajoute le bloc en tant que bloc de référence
 		if (valeurCouleur[0] == 0) {
 			valeurCouleur[0] = sample[0];
 		}
 
+		// on enregistre la valeur de test
+		valeurCouleur[1] = sample[0];
+		
 		return valeurCouleur;
 	}
 }
