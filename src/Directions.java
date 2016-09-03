@@ -6,17 +6,12 @@ public class Directions {
 
 	public void direction(EV3LargeRegulatedMotor moteurDroit, EV3LargeRegulatedMotor moteurGauche, float[] valeurCouleur) {
 
-		
-		
-		int valeurCouleur1 = 1;
+		if (valeurCouleur[1] == valeurCouleur[0]){
+			moteurDroit.forward();
+			moteurDroit.setSpeed(50);
+		}
+		else 
 
-		moteurGauche.forward();
-		moteurGauche.setSpeed(50);
-
-		int valeurCouleur2 = 2;
-
-		moteurDroit.forward();
-		moteurDroit.setSpeed(50);
 	}
 
 }
