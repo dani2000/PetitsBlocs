@@ -30,7 +30,7 @@ public class Mission2PetitsBlocs {
 			
 			valeurCouleur = Valeurs.valeurs(moteurDroit, moteurGauche, couleurBlocs);
 			
-			Direction.Direction(moteurDroit, moteurGauche, valeurCouleur);
+			Direction.direction(moteurDroit, moteurGauche, valeurCouleur);
 			
 			nbreBlocs ++;
 			
