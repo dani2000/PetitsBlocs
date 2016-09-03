@@ -10,6 +10,8 @@ public class Valeurs {
 			SensorMode capteurCouleur) {
 		int valeurCouleur = 0;
 		
+		
+		
 		// règle le capteur couleur
 		
 
@@ -33,10 +35,13 @@ public class Valeurs {
 		moteurGauche.rotate(30);
 		moteurDroit.endSynchronization();
 
-		float[] sampleArray = new float[capteurCouleur.sampleSize()];
-		capteurCouleur.fetchSample(sampleArray, 0);
+		
+		float[] sample = new float[capteurCouleur.sampleSize()];
+		capteurCouleur.fetchSample(sample, 0);
 		valeurCouleur = 0;
 		
+		capteurCouleur.fetchSample(sample, 0);
+
 		
 		if (valeurSource == 0) {
 
