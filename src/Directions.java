@@ -5,7 +5,7 @@ import lejos.hardware.sensor.SensorMode;
 
 public class Directions {
 
-	public void direction(EV3LargeRegulatedMotor moteurDroit, EV3LargeRegulatedMotor moteurGauche, float[] valeurCouleur, EV3MediumRegulatedMotor Bras) {
+	public void direction(EV3LargeRegulatedMotor moteurDroit, EV3LargeRegulatedMotor moteurGauche, float[] valeurCouleur, EV3MediumRegulatedMotor bras) {
 
 		if (valeurCouleur[1] >= valeurCouleur[0]-5 && valeurCouleur[1] <= valeurCouleur[0]+5){
 			moteurDroit.forward();
