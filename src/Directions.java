@@ -13,6 +13,7 @@ public class Directions {
 			moteurDroit.rotate(30);
 			moteurDroit.stop();
 			
+			
 		}
 		else {
 			
