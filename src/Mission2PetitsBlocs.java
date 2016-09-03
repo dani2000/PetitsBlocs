@@ -14,7 +14,7 @@ public class Mission2PetitsBlocs {
 		EV3LargeRegulatedMotor moteurGauche = new EV3LargeRegulatedMotor(MotorPort.C);
 		SensorMode couleurLigne = new EV3ColorSensor(SensorPort.S3).getRedMode();
 		SensorMode couleurBlocs = new EV3ColorSensor(SensorPort.S2).getRedMode();
-		EV3MediumRegulatedMotor Bras = new EV3MediumRegulatedMotor(MotorPort.A);
+		EV3MediumRegulatedMotor bras = new EV3MediumRegulatedMotor(MotorPort.A);
 		
 		int nbreBlocs = 0;
 		
@@ -30,7 +30,7 @@ public class Mission2PetitsBlocs {
 			
 			valeurCouleur = Valeurs.valeurs(moteurDroit, moteurGauche, couleurBlocs, valeurCouleur);
 			
-			Direction.direction(moteurDroit, moteurGauche, valeurCouleur);
+			Direction.direction(moteurDroit, moteurGauche, valeurCouleur, bras);
 			
 			nbreBlocs ++;
 			
