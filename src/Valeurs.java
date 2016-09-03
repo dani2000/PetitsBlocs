@@ -13,7 +13,6 @@ public class Valeurs {
 		
 		
 		// règle le capteur couleur
-		
 
 		// synchronisation des moteurs
 		EV3LargeRegulatedMotor[] sync = new EV3LargeRegulatedMotor[1];
@@ -42,7 +41,6 @@ public class Valeurs {
 		
 		capteurCouleur.fetchSample(sample, 0);
 
-		
 		if (valeurSource == 0) {
 
 		}
