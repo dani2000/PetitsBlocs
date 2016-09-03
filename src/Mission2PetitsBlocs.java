@@ -3,6 +3,7 @@ import lejos.hardware.motor.EV3MediumRegulatedMotor;
 import lejos.hardware.port.MotorPort;
 import lejos.hardware.port.SensorPort;
 import lejos.hardware.sensor.EV3ColorSensor;
+import lejos.hardware.sensor.SensorMode;
 
 public class Mission2PetitsBlocs {
 
@@ -11,8 +12,8 @@ public class Mission2PetitsBlocs {
 		
 		EV3LargeRegulatedMotor moteurDroit = new EV3LargeRegulatedMotor(MotorPort.B);
 		EV3LargeRegulatedMotor moteurGauche = new EV3LargeRegulatedMotor(MotorPort.C);
-		EV3ColorSensor couleurLigne = new EV3ColorSensor(SensorPort.S3);
-		EV3ColorSensor couleurBlocs = new EV3ColorSensor(SensorPort.S2);
+		SensorMode couleurLigne = new EV3ColorSensor(SensorPort.S3).getRedMode();
+		SensorMode couleurBlocs = new EV3ColorSensor(SensorPort.S2).getRedMode();
 		EV3MediumRegulatedMotor Bras = new EV3MediumRegulatedMotor(MotorPort.A);
 		
 		int nbreBlocs = 0;
