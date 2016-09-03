@@ -3,7 +3,7 @@ import lejos.hardware.sensor.EV3ColorSensor;
 import lejos.hardware.sensor.SensorMode;
 
 public class SuiviDeLigne {
-	public void SuiviDeLigne(EV3LargeRegulatedMotor moteurDroit, EV3LargeRegulatedMotor moteurGauche,
+	public void suiviDeLigne(EV3LargeRegulatedMotor moteurDroit, EV3LargeRegulatedMotor moteurGauche,
 			SensorMode couleurLigne, SensorMode couleurBloc) {
 
 		moteurDroit.forward();

@@ -26,7 +26,7 @@ public class Mission2PetitsBlocs {
 		
 		do{
 			
-			SuiviDeLigne.SuiviDeLigne(moteurDroit, moteurGauche, couleurLigne, couleurBlocs);
+			SuiviDeLigne.suiviDeLigne(moteurDroit, moteurGauche, couleurLigne, couleurBlocs);
 			
 			valeurCouleur = Valeurs.valeurs(moteurDroit, moteurGauche, couleurBlocs, valeurCouleur);
 			
