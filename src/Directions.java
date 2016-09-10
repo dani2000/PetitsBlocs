@@ -13,6 +13,8 @@ public class Directions {
 		LCD.clear();
 		if (valeurCouleur[1] >= valeurCouleur[0] - 0.5 && valeurCouleur[1] <= valeurCouleur[0] + 0.5) {
 
+			LCD.clear();
+			LCD.drawString("je vais a droite",0,1);
 			moteurGauche.setSpeed(50);
 			
 			moteurGauche.rotate(60);
@@ -24,9 +26,12 @@ public class Directions {
 			bras.rotate(90);
 
 			moteurGauche.rotate(-60);
+			
 
 		} else {
-			
+			LCD.clear();
+			LCD.drawString("je vais a gauche",0,1);
+
 			moteurGauche.setSpeed(50);			
 			moteurDroit.setSpeed(50);
 			
