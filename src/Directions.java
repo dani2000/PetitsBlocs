@@ -13,35 +13,35 @@ public class Directions {
 		LCD.clear();
 		if (valeurCouleur[1] >= valeurCouleur[0] - 0.5 && valeurCouleur[1] <= valeurCouleur[0] + 0.5) {
 
-			moteurDroit.setSpeed(50);
+			moteurGauche.setSpeed(50);
 			
-			moteurDroit.rotate(30);
-			
-			bras.rotate(90);
-			
-			moteurDroit.rotate(30);
+			moteurGauche.rotate(60);
 			
 			bras.rotate(-90);
+			
+			moteurGauche.rotate(60);
+			
+			bras.rotate(90);
 
-			moteurDroit.rotate(-60);
+			moteurGauche.rotate(-60);
 
 		} else {
 			
 			moteurGauche.setSpeed(50);			
 			moteurDroit.setSpeed(50);
 			
-			moteurDroit.rotate(30);
+			moteurDroit.rotate(60);
 			
-			bras.rotate(90);
+			bras.rotate(-90);
 			
 			moteurDroit.rotate(180, true);
 			moteurGauche.rotate(-180);
 			
-			moteurGauche.rotate(30);
+			moteurDroit.rotate(60);
 			
-			bras.rotate(-90);
+			bras.rotate(90);
 			
-			moteurGauche.rotate(-30);
+			moteurDroit.rotate(-60);
 			
 		}
 		Button.waitForAnyPress();
