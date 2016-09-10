@@ -14,13 +14,13 @@ public class Valeurs {
 
 
 		
-		moteurDroit.setSpeed(20);
-		moteurGauche.setSpeed(20);
+		moteurDroit.setSpeed(40);
+		moteurGauche.setSpeed(40);
 		
 		// avance un peu pour être contre le bloc
 		
-		moteurDroit.rotate(80, true);
-		moteurGauche.rotate(80);
+		moteurDroit.rotate(60, true);
+		moteurGauche.rotate(60);
 		
 		
 		// recule un chouilla pour détecter sa couleur
