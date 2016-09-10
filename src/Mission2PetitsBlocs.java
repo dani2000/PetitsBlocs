@@ -34,7 +34,7 @@ public class Mission2PetitsBlocs {
 			
 			nbreBlocs ++;
 			
-		}while (nbreBlocs < 5);
+		}while (nbreBlocs < 4);
 		
 
 

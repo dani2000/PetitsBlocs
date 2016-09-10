@@ -1,3 +1,5 @@
+import lejos.hardware.Button;
+import lejos.hardware.lcd.LCD;
 import lejos.hardware.motor.EV3LargeRegulatedMotor;
 import lejos.hardware.sensor.EV3ColorSensor;
 import lejos.hardware.sensor.SensorMode;
@@ -10,26 +12,22 @@ public class Valeurs {
 		
 		// règle le capteur couleur
 
-		// synchronisation des moteurs
-		EV3LargeRegulatedMotor[] sync = new EV3LargeRegulatedMotor[1];
-		sync[0] = moteurGauche;
-		moteurDroit.synchronizeWith(sync);
+
 		
-		moteurDroit.setSpeed(50);
-		moteurGauche.setSpeed(50);
+		moteurDroit.setSpeed(20);
+		moteurGauche.setSpeed(20);
 		
 		// avance un peu pour être contre le bloc
-		moteurDroit.startSynchronization();
-		moteurDroit.rotate(30);
-		moteurGauche.rotate(30);
-		moteurDroit.endSynchronization();
+		
+		moteurDroit.rotate(80, true);
+		moteurGauche.rotate(80);
+		
 		
 		// recule un chouilla pour détecter sa couleur
-		moteurDroit.startSynchronization();
-		moteurDroit.rotate(30);
-		moteurGauche.rotate(30);
-		moteurDroit.endSynchronization();
-
+		
+		moteurDroit.rotate(-30, true);
+		moteurGauche.rotate(-30);
+		
 		
 		float[] sample = new float[capteurCouleur.sampleSize()];
 		capteurCouleur.fetchSample(sample, 0);
